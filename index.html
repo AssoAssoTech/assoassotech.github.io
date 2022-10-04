@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body{
+        color: #3f3f46
+    }
+  </style>
+</head>
+<body>
+    <div class="banner bg-cover bg-center h-screen" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1480099225005-2513c8947aec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2803&q=80);">
+        <div id="navbar" class="flex text-white justify-between p-4">
+           <a href="#" class="text-2xl font-bold">AssoAsso</a>
+           <ul class="divide-x">
+            <li class="inline text-lg pl-1">
+                <a href="#solutions">
+                    Solutions
+                </a>
+            </li>
+            <li class="inline text-lg pl-1">
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+           </ul>
+        </div>
+        <div class="flex flex-col h-full w-full justify-center items-center px-4">
+            <div class="content">
+                <h1 class="text-xl sm:text-3xl text-white">Toute votre <strong>association</strong> au <strong>même endroit</strong>!</h1>
+                <p class="text-lg sm:text-xl text-white text-opacity-80">Répondez facilement aux besoins de votre association sur une seule plateforme</p>
+                <a class="text-lg sm:text-xl py-2 px-4 bg-emerald-500 rounded-md inline-block text-white mt-2" href="#solutions">En savoir plus !</a>
+            </div>
+        </div>
+    </div> 
+    <section class="h-[200px] flex flex-col justify-center items-center px-10">
+        <div class="space-y-4">
+            <h2 class="text-xl">Vous êtes interessé ?</h2>
+            <form action="" class="space-y-4">
+                <input type="text" placeholder="Votre addresse email" class=" w-full p-4 border-solid border border-emerald-700 rounded-md h-10">
+                <button type="submit" class="w-full py-2 px-4 bg-emerald-500 rounded-md inline-block text-white">Contactez nous !</button>
+            </form>
+        </div>
+    </section>
+    <hr class="border-solid border border-emerald-700 mx-10 border-opacity-30">     
+    <section id='solutions' class="sm:h-[600px] px-10 mb-4">
+        <div class="mt-4 flex flex-col justify-center h-full">
+            <h2 class="w-full text-center mb-6 text-3xl">Tout ce dont votre association a besoin</h2>
+            <ul class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-x-4 sm:space-y-0 items-center">
+                <li class="w-full h-96 flex flex-col justify-center items-center" >
+                    <div class="bg-cover bg-center grow w-full mb-2" style="background-image: url(https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);">
+                    </div>
+                    <p>Outils de gestion</p>
+                </li>
+                <li class="w-full h-96 flex flex-col justify-center items-center" >
+                    <div class="bg-cover bg-center grow w-full mb-2" style="background-image: url(https://images.unsplash.com/photo-1586125674857-4eb86880905d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);">
+                    </div>
+                    <p>Communication externe</p>
+                </li>
+                <li class="w-full h-96 flex flex-col justify-center items-center" >
+                    <div class="bg-cover bg-center grow w-full mb-2" style="background-image: url(https://images.unsplash.com/photo-1633526543814-9718c8922b7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);">
+                    </div>
+                    <p>Planning séances et événements</p>
+                </li>
+            </ul>
+        </div>
+    </section> 
+    <section class="sm:h-[600px] px-10 mb-4" id="gestion">
+        <div class="h-full flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 m-auto">
+            <img class='grow w-full sm:w-72 object-center object-cover' src="images/accountant_using_calculator.jpg" alt="Accounting">
+            <div class="w-full h-[600px] sm:h-full sm:w-4/6 bg-emerald-50 flex flex-col justify-center px-10">
+                <h2 class="text-xl sm:text-3xl font-bold text-justify mb-4">Concentrez vous sur le coeur de votre association. </h2>
+                <p class="text-justify">Notre mission est de rendre la gestion de votre association la plus facile possible. Vous aurez Accés notamment à un compte bancaire directement connecté à votre comptabilité pour faciliter le suivi de vos dépenses et investissements. Nous avons également pensé à une interface dédiée à la constitution de vos dossiers de subventions. Fini les approximations, vous saurez où vous en êtes en temps réel.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sm:h-[600px] px-10 mb-4" id="evenements">
+        <div class="h-full flex flex-col sm:flex-row m-auto">
+            <img class='sm:hidden grow w-full sm:w-72 object-center object-cover' src="images/rowing.jpg" alt="Accounting">
+            <div class="w-full h-[500px] sm:h-full sm:w-4/6 mt-4 sm:mr-4 sm:mt-0 bg-emerald-700 text-white flex flex-col justify-center px-10">
+                <h2 class="text-xl sm:text-3xl font-bold text-justify mb-4">Combien serons-nous ? Facile !</h2>
+                <p class="text-justify">Gérez tous vos événements associatifs sur notre plateforme. Regroupez vos Licensiés par liste, proposez des evenement récurents, faites le points sur les participants à tout moment.</p>
+            </div>
+            <img class='hidden sm:block grow w-full sm:w-72 object-center object-cover' src="images/rowing.jpg" alt="Accounting">
+        </div>
+    </section>
+    <section class="sm:h-[600px] px-10" id="communication">
+        <div class="h-full flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 m-auto">
+            <img class='grow w-full sm:w-72 object-center object-cover' src="images/communication.jpg" alt="Accounting">
+            <div class="w-full h-[500px] sm:h-full sm:w-4/6 bg-emerald-50 flex flex-col justify-center px-10">
+                <h2 class="text-xl sm:text-3xl font-bold text-justify mb-4">Votre site internet, sans rien faire.</h2>
+                <p class="text-justify">Repondez simplement à nos questions et notre solution génèrera un site web personalisé et optimisé pour favoriser un bon référencement sur les différents moteurs de recherches. Vous pourrez utiliser votre propre nom de domaine si vous en possédez un ou vous tourner vers nous pour le faire si vous le souhaitez.</p>
+            </div>
+        </div>
+    </section>
+    <hr class="border-solid border border-emerald-700 mx-10 border-opacity-30 mt-10">   
+    <section id ='contact' class="h-[200px] flex flex-col justify-center items-center px-10">
+        <div class="space-y-4">
+            <h2 class="text-xl">Vous êtes interessé ?</h2>
+            <form action="" class="space-y-4">
+                <input type="text" placeholder="Votre addresse email" class=" w-full p-4 border-solid border border-emerald-700 rounded-md h-10">
+                <button type="submit" class="w-full py-2 px-4 bg-emerald-500 rounded-md inline-block text-white">Contactez nous !</button>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="javascript/script.js"></script>
+</html>
+
+
