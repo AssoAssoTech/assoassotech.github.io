@@ -16,7 +16,7 @@ let displayErrorMessage = (nodeToReplace) => {
 }
 
 let sendEmailToServer = (formData, nodeToReplace) => {
-    axios.post('http://127.0.0.1:3000/sales/leads.json', formData)
+    axios.post('http://assoasso.tech/sales/leads.json', formData)
       .then(function () {
         displaySuccessMessage(nodeToReplace);
       })
