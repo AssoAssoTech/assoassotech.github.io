@@ -2,17 +2,20 @@ let  contactSubmitButtons = document.querySelectorAll('button[type=submit]')
 let formSubmittedSuccessTemplate = document.getElementById('form-submitted-success')
 let formSubmittedErrorTemplate = document.getElementById('form-submitted-error')
 
-let useTemplate = (nodeToReplace, template) => {
-    let content = template.content.cloneNode(true) 
+let useTemplate = (nodeToReplace, content) => {
     let parentNode = nodeToReplace.parentNode
     parentNode.replaceChild(content, nodeToReplace)
+    return parentNode.querySelector('.replacable')
 } 
 
 let displaySuccessMessage = (nodeToReplace) => {
-    useTemplate(nodeToReplace, formSubmittedSuccessTemplate)
+    let content = formSubmittedSuccessTemplate.content.cloneNode(true) 
+    return useTemplate(nodeToReplace, content)
 }
 let displayErrorMessage = (nodeToReplace) => {
-    useTemplate(nodeToReplace, formSubmittedErrorTemplate)
+    let content = formSubmittedErrorTemplate.content.cloneNode(true) 
+    let newForm = useTemplate(nodeToReplace, content)
+    newForm.onsubmit = event => handleFormSubmission(event)
 }
 
 let sendEmailToServer = (formData, nodeToReplace) => {
